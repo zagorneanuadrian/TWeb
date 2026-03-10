@@ -1,0 +1,74 @@
+/* Resetări de bază și setarea fontului */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f9; 
+    transition: background-color 0.5s ease;
+}
+
+/* Cardul alb care conține elementele jocului */
+.container-joc {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* Stilizarea codului Hex */
+#color {
+    color: #007bff;
+    font-family: monospace;
+    font-size: 1.2em;
+    background-color: #f0f8ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Butonul de generare */
+#btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#btn:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+
+/* Link-ul de întoarcere */
+.link-inapoi {
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s ease;
+}
+
+.link-inapoi:hover {
+    color: #d9534f;
+    text-decoration: underline;
+}
