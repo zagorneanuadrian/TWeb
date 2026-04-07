@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f9;
+}
+
+.container-joc {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.input-section {
+    margin: 25px 0;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#btn-ghiceste {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-ghiceste:hover {
+    background-color: #0056b3;
+}
+
+.feedback-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+#mesaj-indiciu {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#btn-restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link-inapoi {
+    color: #666;
+    text-decoration: none;
+}

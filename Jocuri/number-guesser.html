@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghicește Numărul</title>
+    <link rel="stylesheet" href="number-guesser.css">
+</head>
+<body>
+
+    <div class="container-joc">
+        <h1>Ghicește Numărul</h1>
+        <p>Mă gândesc la un număr între 1 și 100. Poți să-l ghicești?</p>
+
+        <div class="input-section">
+            <input type="number" id="input-numar" placeholder="Introdu un număr..." min="1" max="100">
+            <button id="btn-ghiceste">Ghicește</button>
+        </div>
+
+        <div class="feedback-section">
+            <p id="mesaj-indiciu">Succes! Începe prin a introduce un număr.</p>
+            <p>Încercări efectuate: <span id="nr-incercari">0</span></p>
+        </div>
+
+        <button id="btn-restart" style="display: none;">Joacă din nou</button>
+
+        <br><br>
+        <a href="../site.html" class="link-inapoi">← Înapoi la meniu</a>
+    </div>
+
+    <script src="number-guesser.js"></script>
+</body>
+</html>
