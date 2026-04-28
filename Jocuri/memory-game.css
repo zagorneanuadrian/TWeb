@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-joc {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 { margin-top: 0; }
+
+/* Grila cu cele 12 cărți */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 15px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+/* Stilizarea cărților cu fața în jos */
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #007bff; /* Culoarea spatelui cărții */
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: transparent; /* Ascundem fructul */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+/* Când treci cu mouse-ul peste ele */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Cum arată o carte întoarsă cu fața în sus */
+.card.flipped, .card.matched {
+    background-color: #fff;
+    border: 3px solid #007bff;
+    color: #333; /* Fructul devine vizibil */
+    transform: rotateY(180deg); /* Efectul 3D de întoarcere */
+    cursor: default;
+}
+
+/* Cum arată cărțile când ai găsit perechea */
+.card.matched {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+#btn-restart {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+#btn-restart:hover {
+    background-color: #218838;
+}
+
+.link-inapoi {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.link-inapoi:hover {
+    text-decoration: underline;
+}

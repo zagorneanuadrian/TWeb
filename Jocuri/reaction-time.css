@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-joc {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 { margin-top: 0; color: #333; }
+
+/* Caseta uriașă pe care apasă jucătorul */
+#zona-click {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 25px 0;
+    transition: background-color 0.1s; /* Se schimbă culoarea rapid */
+    user-select: none; /* Previne selectarea textului din greșeală */
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+#mesaj-stare {
+    color: white;
+    font-size: 1.8em;
+    pointer-events: none; /* Ca click-ul să nu se blocheze pe text */
+}
+
+/* Cele 3 stări de culoare ale jocului */
+.stare-start { background-color: #007bff; } /* Albastru */
+.stare-asteptare { background-color: #dc3545; } /* Roșu */
+.stare-verde { background-color: #28a745; } /* Verde! */
+
+#rezultat {
+    color: #444;
+    font-size: 1.4em;
+    height: 30px; /* Păstrăm un spațiu fix să nu sară pagina */
+}
+
+.link-inapoi {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.link-inapoi:hover {
+    text-decoration: underline;
+}

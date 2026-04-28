@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-joc {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 { margin-top: 0; color: #333; }
+
+.panou-scor {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.panou-scor h2 { margin: 0; }
+
+/* Stilizarea noului meniu de dificultate */
+.controale-dificultate {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#select-dificultate {
+    padding: 8px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+#btn-start {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+#btn-start:hover { background-color: #0056b3; }
+#btn-start:disabled { background-color: #aaa; cursor: not-allowed; }
+
+/* Grila de pământ */
+.grila-cartite {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gaura {
+    background-color: #654321;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 0 15px 0 #4a3015;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartita {
+    font-size: 65px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.15s ease; /* Am făcut animația de urcare/coborâre o idee mai rapidă pentru nivelul extrem */
+    cursor: crosshair;
+    user-select: none;
+}
+
+.gaura.sus .cartita {
+    top: 10px; 
+}
+
+.link-inapoi {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.link-inapoi:hover { text-decoration: underline; }

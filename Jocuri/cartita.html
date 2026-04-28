@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack-a-Mole</title>
+    <link rel="stylesheet" href="cartita.css">
+</head>
+<body>
+
+    <div class="container-joc">
+        <h1>Loviți Cârtița!</h1>
+        <p>Ai <b>30 de secunde</b>. Loviți cât mai multe cârtițe! 🔨</p>
+
+        <div class="panou-scor">
+            <h2>Scor: <span id="scor" style="color: #28a745;">0</span></h2>
+            <h2>Timp: <span id="timp" style="color: #dc3545;">30</span>s</h2>
+        </div>
+
+        <div class="controale-dificultate">
+            <label for="select-dificultate"><b>Dificultate:</b></label>
+            <select id="select-dificultate">
+                <option value="easy">🟢 Ușor (Easy)</option>
+                <option value="medium" selected>🟡 Mediu (Medium)</option>
+                <option value="hard">🟠 Greu (Hard)</option>
+                <option value="extreme">🔴 Extrem (Extreme)</option>
+            </select>
+        </div>
+
+        <button id="btn-start">Începe Jocul</button>
+
+        <div class="grila-cartite">
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+            <div class="gaura"><div class="cartita">🐹</div></div>
+        </div>
+
+        <br>
+        <a href="../site.html" class="link-inapoi">← Înapoi la meniu</a>
+    </div>
+
+    <script src="cartita.js"></script>
+
+</body>
+</html>

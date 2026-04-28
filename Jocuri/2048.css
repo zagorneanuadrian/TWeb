@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-joc {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+h1 { margin-top: 0; color: #333; font-size: 3em; margin-bottom: 5px; }
+.scor-container h2 { margin: 10px 0; }
+
+#grid-2048 {
+    width: 360px;
+    height: 360px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.celula-2048 {
+    width: 80px;
+    height: 80px;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #776e65;
+    /* Tranzitii mai lente pentru un efect smooth */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animație pentru celule noi */
+.tile-new {
+    animation: appear 0.4s ease-out;
+}
+
+/* Animație pentru combinare */
+.tile-merged {
+    animation: pop 0.3s ease-in-out;
+}
+
+@keyframes appear {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Culori celule */
+.val-2 { background-color: #eee4da; }
+.val-4 { background-color: #ede0c8; }
+.val-8 { background-color: #f2b179; color: white; }
+.val-16 { background-color: #f59563; color: white; }
+.val-32 { background-color: #f67c5f; color: white; }
+.val-64 { background-color: #f65e3b; color: white; }
+.val-128 { background-color: #edcf72; color: white; font-size: 30px; }
+.val-256 { background-color: #edcc61; color: white; font-size: 30px; }
+.val-512 { background-color: #edc850; color: white; font-size: 30px; }
+.val-1024 { background-color: #edc53f; color: white; font-size: 25px; }
+.val-2048 { background-color: #edc22e; color: white; font-size: 25px; }
+
+#btn-restart {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#btn-restart:hover { background-color: #0056b3; }
+
+.link-inapoi {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}

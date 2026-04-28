@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Jocul Snake</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+    <div class="container-joc">
+        <h1>Snake</h1>
+        <p>Folosește <b>Săgețile</b> sau <b>W A S D</b> pentru a mișca șarpele!</p>
+        
+        <h2 id="scor-text">Scor: <span id="scor">0</span></h2>
+        
+        <div class="controale-mancare">
+            <button id="btn-minus">-</button>
+            <span id="text-mancare">Mere pe ecran: 1</span>
+            <button id="btn-plus">+</button>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <br>
+        <button id="btn-restart" style="display: none;">Joacă din nou</button>
+        <br><br>
+        <a href="../site.html" class="link-inapoi">← Înapoi la meniu</a>
+    </div>
+
+    <script src="snake.js"></script>
+
+</body>
+</html>

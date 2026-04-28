@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="stylesheet" href="2048.css">
+</head>
+<body>
+
+    <div class="container-joc">
+        <h1>2048</h1>
+        <p>Unește numerele identice folosind <b>Săgețile</b> sau <b>WASD</b> pentru a ajunge la 2048!</p>
+
+        <div class="scor-container">
+            <h2>Scor: <span id="scor" style="color: #28a745;">0</span></h2>
+        </div>
+
+        <div id="grid-2048"></div>
+
+        <h2 id="mesaj-game-over" style="display:none; color: #dc3545;">Game Over! 😢</h2>
+
+        <button id="btn-restart">Joacă din nou</button>
+        <br><br>
+        <a href="../site.html" class="link-inapoi">← Înapoi la meniu</a>
+    </div>
+
+    <script src="2048.js"></script>
+
+</body>
+</html>

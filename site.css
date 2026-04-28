@@ -30,10 +30,10 @@ hr {
     margin-bottom: 40px;
 }
 
-/* Containerul principal - folosim CSS Grid pentru așezare */
+/* Containerul principal - Setat fix pe 3 coloane */
 .container-jocuri {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Aici am forțat 3 jocuri pe rând */
     gap: 25px; 
     max-width: 1200px; 
     margin: 0 auto; 
